@@ -302,6 +302,17 @@ legend {
 
 .benefits {
     padding: 100px 0 120px;
+    position: relative;
+
+    &::after {
+        content: "II";
+        position: absolute;
+        top: -25%;
+        right: 10%;
+        opacity: 0.05;
+        font-size: 400px;
+        font-family: $font-accent;
+    }
 
     &__row {
         display: flex;
@@ -332,6 +343,17 @@ legend {
 /** appartments start **/
 .apartments {
     margin-bottom: 80px;
+    position: relative;
+
+    &::after {
+        content: "III";
+        position: absolute;
+        top: 15%;
+        left: 0%;
+        opacity: 0.05;
+        font-size: 400px;
+        font-family: $font-accent;
+    }
 
     &__title {
         margin-bottom: 80px;
@@ -502,6 +524,19 @@ legend {
 .video {
     margin-bottom: 100px;
     text-align: center;
+    position: relative;
+
+    &::after {
+        content: "IV";
+        position: absolute;
+        top: -10%;
+        right: 5%;
+        transform: rotate(-30deg);
+        opacity: 0.05;
+        font-size: 400px;
+        font-family: $font-accent;
+        z-index: -1;
+    }
 
     &__link {
         position: relative;
@@ -546,6 +581,18 @@ legend {
 /** map start **/
 .section__map {
     margin-bottom: 80px;
+    position: relative;
+
+    &::after {
+        content: "V";
+        position: absolute;
+        top: -20%;
+        left: 0%;
+        opacity: 0.05;
+        font-size: 400px;
+        font-family: $font-accent;
+        z-index: -1;
+    }
 
     &-title {
         margin-bottom: 80px;

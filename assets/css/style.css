@@ -259,6 +259,16 @@ legend {
 
 .benefits {
   padding: 100px 0 120px;
+  position: relative;
+}
+.benefits::after {
+  content: "II";
+  position: absolute;
+  top: -25%;
+  right: 10%;
+  opacity: 0.05;
+  font-size: 400px;
+  font-family: "Playfair Display", serif;
 }
 .benefits__row {
   display: flex;
@@ -283,6 +293,16 @@ legend {
 /** appartments start **/
 .apartments {
   margin-bottom: 80px;
+  position: relative;
+}
+.apartments::after {
+  content: "III";
+  position: absolute;
+  top: 15%;
+  left: 0%;
+  opacity: 0.05;
+  font-size: 400px;
+  font-family: "Playfair Display", serif;
 }
 .apartments__title {
   margin-bottom: 80px;
@@ -421,6 +441,18 @@ legend {
 .video {
   margin-bottom: 100px;
   text-align: center;
+  position: relative;
+}
+.video::after {
+  content: "IV";
+  position: absolute;
+  top: -10%;
+  right: 5%;
+  transform: rotate(-30deg);
+  opacity: 0.05;
+  font-size: 400px;
+  font-family: "Playfair Display", serif;
+  z-index: -1;
 }
 .video__link {
   position: relative;
@@ -456,6 +488,17 @@ legend {
 /** map start **/
 .section__map {
   margin-bottom: 80px;
+  position: relative;
+}
+.section__map::after {
+  content: "V";
+  position: absolute;
+  top: -20%;
+  left: 0%;
+  opacity: 0.05;
+  font-size: 400px;
+  font-family: "Playfair Display", serif;
+  z-index: -1;
 }
 .section__map-title {
   margin-bottom: 80px;
