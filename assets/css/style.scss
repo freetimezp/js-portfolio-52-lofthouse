@@ -54,7 +54,7 @@ a {
     max-width: 1140px;
 
     &--sm {
-        max-width: 840px;
+        max-width: 900px;
     }
 }
 
@@ -285,3 +285,44 @@ legend {
 }
 
 /** header end **/
+
+
+
+/** benefits start **/
+.visually-hidden {
+    height: 1px;
+    overflow: hidden;
+    width: 1px;
+    position: absolute;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    white-space: nowrap;
+}
+
+.benefits {
+    padding: 100px 0 120px;
+
+    &__row {
+        display: flex;
+        column-gap: 30px;
+    }
+
+    &__item {
+        text-align: center;
+
+        &-img {
+            margin-bottom: 45px;
+        }
+
+        &-text {
+            max-width: 280px;
+            font-size: 20px;
+            line-height: 1.35;
+            font-family: $font-secondary;
+            font-weight: 300;
+        }
+    }
+}
+
+/** benefits start **/

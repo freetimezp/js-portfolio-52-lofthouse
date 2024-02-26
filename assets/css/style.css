@@ -33,7 +33,7 @@ a:hover {
   max-width: 1140px;
 }
 .container--sm {
-  max-width: 840px;
+  max-width: 900px;
 }
 
 .text-right {
@@ -243,4 +243,40 @@ legend {
   background-image: url("../images/header/phone.svg");
 }
 
-/** header end **//*# sourceMappingURL=style.css.map */
+/** header end **/
+/** benefits start **/
+.visually-hidden {
+  height: 1px;
+  overflow: hidden;
+  width: 1px;
+  position: absolute;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.benefits {
+  padding: 100px 0 120px;
+}
+.benefits__row {
+  display: flex;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+.benefits__item {
+  text-align: center;
+}
+.benefits__item-img {
+  margin-bottom: 45px;
+}
+.benefits__item-text {
+  max-width: 280px;
+  font-size: 20px;
+  line-height: 1.35;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+/** benefits start **//*# sourceMappingURL=style.css.map */
