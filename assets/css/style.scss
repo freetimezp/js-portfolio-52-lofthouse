@@ -326,3 +326,82 @@ legend {
 }
 
 /** benefits start **/
+
+
+
+/** appartments start **/
+.appartments {
+    &__title {
+        margin-bottom: 80px;
+    }
+
+    &__cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+
+        .card {
+            position: relative;
+            display: inline-block;
+            overflow: hidden;
+            transition: all 0.4s ease;
+
+            &::before {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(180deg,
+                        rgba(36, 43, 51, 0) 0%,
+                        $dark 100%);
+                z-index: 6;
+            }
+
+            &::after {
+                opacity: 0;
+                content: '';
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                right: 50%;
+                bottom: 50%;
+                border: 3px double rgba(255, 255, 255, .4);
+                transition: all 0.5s ease-in-out;
+                z-index: 7;
+            }
+
+            &:hover::after {
+                opacity: 1;
+                left: 15px;
+                top: 15px;
+                right: 15px;
+                bottom: 15px;
+            }
+
+            &:hover {
+                color: $white;
+
+                img {
+                    position: relative;
+                    z-index: 5;
+                    transition: all 0.4s ease;
+                    transform: scale(1.1);
+                    filter: contrast(110%) brightness(1.2) saturate(1.2);
+                }
+            }
+
+            &__title {
+                position: absolute;
+                left: 50px;
+                right: 20px;
+                bottom: 44px;
+                font-size: 24px;
+                z-index: 15;
+            }
+        }
+    }
+}
+
+/** appartments end **/
