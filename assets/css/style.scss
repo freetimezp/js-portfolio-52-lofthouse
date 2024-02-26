@@ -549,6 +549,7 @@ legend {
 
     &-title {
         margin-bottom: 80px;
+        text-transform: capitalize;
     }
 
     .map {
@@ -558,3 +559,69 @@ legend {
 }
 
 /** map end **/
+
+
+
+/** feedback start **/
+.feedback {
+    margin-bottom: 80px;
+
+    &__title {
+        margin-bottom: 80px;
+        text-transform: capitalize;
+    }
+
+    .form {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        input,
+        p,
+        button {
+            width: 250px;
+        }
+
+        &__input {
+            height: 50px;
+            padding: 12px;
+            background-color: rgba(255, 255, 255, .2);
+            color: $white;
+            font-size: 14px;
+            transition: background-color .3s ease;
+
+            &::placeholder {
+                color: $placeholder;
+                text-transform: capitalize;
+            }
+
+            &:focus {
+                background-color: rgba(255, 255, 255, .25);
+            }
+        }
+
+        &__btn {
+            height: 50px;
+            padding: 12px;
+            font-size: 16px;
+            color: $white;
+            font-weight: 700;
+            text-align: center;
+            background-color: $accent;
+            transition: background-color .4s ease;
+
+            &:hover {
+                background-color: saturate($accent, 20%);
+            }
+        }
+
+        &__privacy {
+            font-size: 13px;
+            text-align: left;
+            color: $muted;
+            line-height: 1.25;
+        }
+    }
+}
+
+/** feedback start **/

@@ -459,10 +459,69 @@ legend {
 }
 .section__map-title {
   margin-bottom: 80px;
+  text-transform: capitalize;
 }
 .section__map .map {
   height: 350px;
   background-color: #626262;
 }
 
-/** map end **//*# sourceMappingURL=style.css.map */
+/** map end **/
+/** feedback start **/
+.feedback {
+  margin-bottom: 80px;
+}
+.feedback__title {
+  margin-bottom: 80px;
+  text-transform: capitalize;
+}
+.feedback .form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.feedback .form input,
+.feedback .form p,
+.feedback .form button {
+  width: 250px;
+}
+.feedback .form__input {
+  height: 50px;
+  padding: 12px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+.feedback .form__input::-moz-placeholder {
+  color: #BEBEBE;
+  text-transform: capitalize;
+}
+.feedback .form__input::placeholder {
+  color: #BEBEBE;
+  text-transform: capitalize;
+}
+.feedback .form__input:focus {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+.feedback .form__btn {
+  height: 50px;
+  padding: 12px;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+  background-color: #D4C17F;
+  transition: background-color 0.4s ease;
+}
+.feedback .form__btn:hover {
+  background-color: #e5ca6e;
+}
+.feedback .form__privacy {
+  font-size: 13px;
+  text-align: left;
+  color: #E7E7E7;
+  line-height: 1.25;
+}
+
+/** feedback start **//*# sourceMappingURL=style.css.map */
