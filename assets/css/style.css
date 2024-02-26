@@ -524,4 +524,56 @@ legend {
   line-height: 1.25;
 }
 
-/** feedback start **//*# sourceMappingURL=style.css.map */
+/** feedback start **/
+/** footer start **/
+.footer {
+  background-color: #2D343C;
+  padding: 72px 0 52px;
+}
+.footer__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+.footer__grid a.logo {
+  font-size: 30px;
+  text-transform: uppercase;
+  font-family: "Playfair Display", serif;
+}
+.footer__nav {
+  font-size: 14px;
+  margin-top: 5px;
+}
+.footer__nav .nav__list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.footer__nav .nav__list li:hover {
+  transition: all 0.4s ease;
+  transform: translateX(4px);
+}
+.footer__address {
+  font-size: 14px;
+  margin-top: 5px;
+}
+.footer__address .nav__list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 30px;
+}
+.footer__address .nav__list li:nth-child(3) {
+  color: #D4C17F !important;
+  font-weight: 600;
+}
+.footer__address .socials {
+  display: flex;
+  gap: 15px;
+}
+.footer__address .socials li:hover {
+  transition: all 0.4s ease;
+  transform: translateY(-5px) scale(1.1);
+}
+
+/** footer end **//*# sourceMappingURL=style.css.map */
