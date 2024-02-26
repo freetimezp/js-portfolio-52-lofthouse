@@ -330,7 +330,9 @@ legend {
 
 
 /** appartments start **/
-.appartments {
+.apartments {
+    margin-bottom: 80px;
+
     &__title {
         margin-bottom: 80px;
     }
@@ -405,3 +407,91 @@ legend {
 }
 
 /** appartments end **/
+
+
+
+/** cta start **/
+.cta {
+    padding: 240px 0;
+    background: linear-gradient(180deg,
+            $dark 10.42%,
+            rgba(36, 43, 51, 0) 50.52%,
+            $dark 90.1%),
+        linear-gradient(0deg,
+            rgba(36, 43, 51, 0.8),
+            rgba(36, 43, 51, 0.8)),
+        url('../images/cta/cta-bg.jpg'), #c4c4c4;
+
+    &__title {
+        margin-bottom: 17px;
+
+        .title-2 {
+            text-transform: capitalize;
+        }
+    }
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+
+    &__text {
+        line-height: 1.5;
+        text-align: justify;
+    }
+
+    .form {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+
+        input,
+        p,
+        button {
+            width: 250px;
+        }
+
+        &__input {
+            height: 50px;
+            padding: 12px;
+            background-color: rgba(255, 255, 255, .2);
+            color: $white;
+            font-size: 14px;
+            transition: background-color .3s ease;
+
+            &::placeholder {
+                color: $placeholder;
+                text-transform: capitalize;
+            }
+
+            &:focus {
+                background-color: rgba(255, 255, 255, .25);
+            }
+        }
+
+        &__btn {
+            height: 50px;
+            padding: 12px;
+            font-size: 16px;
+            color: $white;
+            font-weight: 700;
+            text-align: center;
+            background-color: $accent;
+            transition: background-color .4s ease;
+
+            &:hover {
+                background-color: saturate($accent, 20%);
+            }
+        }
+
+        &__privacy {
+            font-size: 12px;
+            text-align: right;
+            color: $muted;
+            line-height: 1.25;
+        }
+    }
+}
+
+/** cta end **/
