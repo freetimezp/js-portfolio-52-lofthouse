@@ -541,3 +541,20 @@ legend {
 }
 
 /** video end **/
+
+
+/** map start **/
+.section__map {
+    margin-bottom: 80px;
+
+    &-title {
+        margin-bottom: 80px;
+    }
+
+    .map {
+        height: 350px;
+        background-color: #626262;
+    }
+}
+
+/** map end **/

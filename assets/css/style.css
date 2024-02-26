@@ -452,4 +452,17 @@ legend {
   transition: transform 0.4s ease;
 }
 
-/** video end **//*# sourceMappingURL=style.css.map */
+/** video end **/
+/** map start **/
+.section__map {
+  margin-bottom: 80px;
+}
+.section__map-title {
+  margin-bottom: 80px;
+}
+.section__map .map {
+  height: 350px;
+  background-color: #626262;
+}
+
+/** map end **//*# sourceMappingURL=style.css.map */
